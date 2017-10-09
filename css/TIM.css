@@ -1,0 +1,304 @@
+html,body {
+	width: 100%;
+	height: 100%;
+	font-family: Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", STXihei, STHeiti, Heiti, SimSun, sans-serif;
+	text-shadow:  0 1px 0 black, 0 0 5px black;
+}
+main {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+section.first {
+	width: 100%;
+	background-image: url('../image/first-bg.jpg');
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+section.first .nav {
+	width: 80%;
+	max-width: 1170px;
+	min-width: 980px;
+	margin: 0 auto;
+	height: 75px;
+}
+
+section.first .nav-left {
+	float: left;
+}
+
+section.first .logo {
+	display: block;
+	float: left;
+	margin: calc((75px - 44px)/2);
+}
+
+section.first .nav-left ul {
+	float: left;
+	padding-left: 20px;
+}
+
+section.first .nav-left  li {
+	float: left;
+	font-size: 18px;
+	margin-left: 20px;
+}
+
+section.first .nav-left ul a {
+	display: block;
+	line-height: 75px;
+	padding: 0 20px;
+}
+
+section.first li.active a {
+	background-color: #12b7f5;
+}
+
+
+
+section.first .nav-right {
+	float: right;
+	width: 360px;
+	height: 75px;
+	/*background-color: #f00;*/
+}
+
+section.first .nav-right .zhuce {
+	float: left;
+	display: block;
+	width: 96px;
+	height: 39px;
+	background-image: url('../image/sprite-icon.png');
+	background-repeat: no-repeat;
+	background-position: 0 -244px;
+	margin-top: calc((75px - 39px)/2);
+}
+
+.extra {
+	float: right;
+}
+
+.extra ul {
+	overflow: hidden;
+}
+
+.extra li {
+	float: left;
+	font-size: 14px;
+	margin-left: 30px;
+	line-height: 40px;
+}
+
+.extra>a {
+	display: block;
+	text-align: right;
+	font-size: 14px;
+	letter-spacing: 0.7px;
+}
+
+.nav-right .extra > a:hover {
+  text-decoration: underline;
+}
+
+section.first .site-name {
+  width: 220px;
+  height: 124px;
+  margin:  0 auto;
+  background-image: url("../image/site-name.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+section.first .download {
+  width: 240px;
+  height: 53px;
+  margin:  20px auto;
+  background-image: url("../image/download.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+section.first .feature {
+  width: 812px;
+  height: 147px;
+  margin:  0 auto;
+  background-image: url("../image/feture.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+section.first .doc {
+  width: 98%;
+  margin:  0 auto;
+}
+
+section.first .doc img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+} 
+
+section.first .imqq {
+  width: 100%;
+  height: 280px;
+  background-image: url("../image/imqq.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* 第二屏 */
+.second {
+  width: 100%;
+  height: 600px;
+  background-image: url("../image/firstimage.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* 第三屏 */
+.third {
+  width: 100%;
+  height: 584px;
+  background-color: #fff;
+}
+
+.third .third-wrap {
+  width: 960px;
+  height: 100%;
+  position: relative;
+  margin:  0 auto;
+}
+
+.third .third-left {
+  position: absolute;
+  left: -32px;
+  bottom: 0;
+  width: 664px;
+  height: 763px;
+  background-image: url("../image/third-iphone.png");
+  background-repeat: no-repeat;
+}
+
+.third .third-right {
+  position: absolute;
+  right: 7px;
+  top: 115px;
+  width: 487px;
+}
+
+.third .goutong {
+ width: 100%;
+ height: 135px;
+ background-image: url("../image/third-goutong.png");
+ background-repeat: no-repeat;
+ background-position: center top;
+}
+
+.third .third-right p {
+  font-size: 18px;
+  text-align: right;
+  line-height: 25px;
+  letter-spacing: 2px;
+  opacity: 0.6;
+  margin-bottom: 12px;
+}
+
+.third .third-right .more {
+  display: block;
+  text-align: right;
+  font-size: 20px;
+  color: #12b7f5;
+  opacity: 0.6;
+}
+
+.third .third-right ul {
+  overflow: hidden;
+  background-image: url("../image/third-feture.png");
+  background-position:190px 0;
+  background-repeat: no-repeat;
+  margin-top: 20px;
+}
+
+.third .third-right li {
+  float: right;
+  font-size: 14px;
+  padding: 58px 0 0;
+  color: #a0a0a0;
+  text-align: right;
+  width: 115px;
+}
+
+/* 第四屏 */
+.fourth {
+    width: 100%;
+    height: 600px;
+    background-image: url("../image/fourthimage.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* 第五屏 */
+.fifth {
+  width: 100%;
+  height: 584px;
+}
+
+.fifth .fifth-wrap {
+  width: 960px;
+  height: 100%;
+  position: relative;
+  margin:  0 auto;
+}
+
+.fifth .fifth-right {
+  position: absolute;
+  right: -100px;
+  bottom: 104px;
+  width: 597px;
+  height: 330px;
+  background-image: url("../image/fifth-computer.png");
+  background-repeat: no-repeat;
+}
+
+
+/* 第六屏 */
+.sixth {
+  width: 100%;
+  height: 600px;
+  background-image: url("../image/siximage.jpg");
+  background-position:  center top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* 第七屏 */
+.seventh {
+  width: 100%;
+  height: 600px;
+}
+
+.seventh .seventh-wrap {
+  width: 960px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.seventh .seventh-left {
+  position: absolute;
+  left: 88px;
+  bottom: 0;
+  width: 344px;
+  height: 506px;
+  background-image: url("../image/seven-iphone.png");
+  background-repeat: no-repeat;
+  background-position: -30px 0;
+}
