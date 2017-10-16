@@ -1,0 +1,136 @@
+html,body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.jdm {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+/* 固定搜索栏 */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #c91523;
+}
+/* logo */
+header .logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 56px;
+    height: 21px;
+    background-image: url("../image/jd-sprites.png");
+    background-size: 200px 200px;
+    background-position: 0 -109px;
+}
+/* 搜索框 */
+header .search-box {
+    width: 100%;
+    height: 100%;
+    padding-left: 75px;
+    padding-right: 50px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+header .icon-search {
+    position: absolute;
+    top: 5px;
+    left: 80px;
+    width: 20px;
+    height: 30px;
+    background-image: url("../image/jd-sprites.png");
+    background-size: 200px 200px;
+    background-position: -59px -104px;
+}
+
+header .search-box input {
+    width: 100%;
+    height: 30px;
+    border: 1px solid #fff;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    font-size: 14px;
+    padding-left: 30px;
+}
+
+header .jdm-login {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #fff;
+}
+
+/* 轮播图 */
+main .carousel img {
+    width: 100%;
+}
+
+/* 导航栏 */
+.nav {
+    width: 100%;
+    padding-top: 10px;
+    background-color: #fff;
+  }
+  
+  .nav ul {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .nav li {
+    float: left;
+    width: 25%;
+    padding-bottom: 10px;
+  }
+  
+  .nav a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .nav img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .nav span {
+    display: block;
+    margin-top: 5px;
+  }
+
+
+  /* 底部功能 */
+.toolbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 44px;
+    background-color: #fff;
+}
+.toolbar ul {
+    width: 100%;
+    overflow: hidden;
+}
+
+.toolbar li {
+    float: left;
+    width: 20%;
+    flex: 1;
+    height: 100%;
+}
+.toolbar li img {
+    height: 44px;
+    width: auto;
+}
