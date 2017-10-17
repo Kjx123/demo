@@ -623,3 +623,14 @@ main .all-add span {
   margin-top: 4.875rem;
   font-size: 0.8125rem;
 }
+main .footer {
+  margin-top: 3.75rem;
+  font-size: 0.8125rem;
+  font-weight: 100;
+  line-height: 0.8125rem;
+  color: #aeaeae;
+}
+main .footer p {
+  margin: 0.8125rem;
+  font-size: 0.75rem;
+}
