@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>触屏事件</title>
+	<style>
+		body {
+			padding: 0;
+			margin: 0;
+			background-color: #F7F7F7;
+		}
+
+		.box {
+			width: 320px;
+			height: 400px;
+			margin: 10px auto;
+			background-color: pink;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="box"></div>
+
+	<script type="text/javascript">
+		
+		// 功能 封装tap手势  单击
+		// 思路 首先触摸开始的时候获取起始坐标 在触摸结束的时候结束坐标 如果这两个坐标一致差不多
+		// 代表两个位置一样 就是点击
+		
+
+		// 步骤 ：
+		// 获取tap 点击元素
+		var box = document.querySelector('.box');
+		// 变量声明
+		var startX, startY, endX, endY, startTime, endTime;
+		// 给tap 点击的元素添加touchstart事件 为了获取起始点坐标
+		box.addEventListener('touchstart', function(e){
+			var touches = e.targetTouches[0];
+			startX = touches.clientX;
+			startY = touches.clientY;
+
+			// 再次获取一开始的时间
+			startTime = new Date().getTime();
+		})
+
+		// 给tap(点击)的元素添加touchend事件 为了获取结束点的坐标
+		box.addEventListener('touchend', function(e){
+			endTime = new Date().getTime();
+
+			var touches = e.changedTouches[0];
+			endX = touches.clientX;
+			endY = touches.clientY;
+
+			// 判断起始点的坐标和终止点的坐标 是否小于5 如果小于则点击
+			if (Math.abs(endX - startX) < 5 && Math.abs(endY - startY) < 5 && (endTime - startTime) < 300) {
+				console.log(1);
+			}
+		})
+
+
+
+
+	</script>
+</body>
+
+</html>
