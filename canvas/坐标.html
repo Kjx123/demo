@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas></canvas>
+    <script>
+        // 获取画布元素
+        var canvas = document.querySelector('canvas');
+        // 设置画布大小 宽高
+        canvas.width = 600;
+        canvas.height = 300;
+        canvas.style.border = '1px solid blue';
+        // 获取2d画笔上下文
+        var context = canvas.getContext('2d');
+
+        //    功能制作坐标小点 数据小方块
+        // 确定小方块的大小
+        var sWidth = 10;
+        // 模拟一个假的数据 就是正方形的中心坐标
+        var data = {
+            x: 300,
+            y: 240
+          }
+
+        // 计算小方块的四个点的坐标
+        // 确定小方块左上角的坐标
+        context.moveTo(data.x - sWidth / 2, data.y - sWidth / 2);
+        context.lineTo(data.x + sWidth / 2, data.y - sWidth / 2);
+        context.lineTo(data.x +sWidth/2,data.y+sWidth/2);
+        context.lineTo(data.x-sWidth/2,data.y+sWidth/2);
+        context.closePath();
+        context.stroke();
+        context.fill();
+     
+
+    </script>
+</body>
+
+</html>

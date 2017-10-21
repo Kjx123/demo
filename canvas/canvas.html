@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 在canvas不能设置css中的宽高 来控制大小 */
+
+        /* canvas  画图中每一个宽高 起始代表每一个css像素
+        所以不能用css 控制大小   只能用标签的属性  和js 属性 */
+
+        /* canvas {
+            width: 600px;
+            height: 300px;
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- 在HTML 中添加一个canvas 变迁 就代表页面开辟了一个绘画区域 -->
+    <!-- 如果设置canvas画布大小可以再canvas标签中设置属性大小 通过js去设置的 宽高 -->
+    <!-- 兼容性还不错 支持canvas标签的浏览器都对其支持良好
+        对IE 678 这些不支持 
+    -->
+
+
+    <!-- 绘制的基本步骤 -->
+
+    <!-- 1 准备一张纸(添加canvas 标签) -->
+
+
+    <canvas width="600" height="300"></canvas>
+
+    <script>
+
+        // 2 获取纸(获取canvas 元素)
+        var canvas = document.querySelector('canvas');
+        canvas.width = 600;
+        canvas.height = 300;
+        canvas.style.border = '1px solid #ccc';
+        // 3准备画笔(canvas 上下文)
+        var context = canvas.getContext('2d'); //准备画2d的笔
+        // var webgl = canvas.getContext('webgl');//准备画3d的笔
+        //    4 计划直线的起点     x，y
+        // context.moveTo(10, 690)//让画笔移动到哪个坐标开始的画
+        // context.moveTo(10, 170)
+        // context.moveTo(60, 110)
+        //    5 计划直线的终点   x,y
+        // context.lineTo(80, 55)
+        // context.lineTo(80, 170)
+        // context.lineTo(30, 70)
+
+        // 设置线的宽度
+        // context.lineWidth = 10;
+
+        //设置线的颜色
+        // context.strokeStyle= 'red';
+
+        //设置线的末端的类型 (‘butt’默认   ‘round’圆角   'square'小方块)
+        // context.lineCap= 'butt';
+
+        //    6 开始上画笔
+        // context.stroke()//锚边  起始点和终点连接起来的，
+
+
+
+
+        // 设置线的拐点样式
+
+        // 第一条线
+        // context.moveTo(100, 50);
+        // context.lineTo(150, 100);
+        // context.lineTo(200, 50);
+        //第二线
+        // context.moveTo(100, 80);
+        // context.lineTo(150, 130);
+        // context.lineTo(200, 80);
+
+        //第三线
+        // context.moveTo(100, 110);
+        // context.lineTo(150, 160);
+        // context.lineTo(200, 110);
+
+        //线的宽度
+        // context.lineWidth=10;
+       //拐点的样式  ('miter' 默认     'round'圆角   'bevel'尖角变平)
+        // context.lineJoin='bevel';
+
+        // context.stroke()
+
+
+        // 正方形
+        // context.moveTo(10, 10);
+        // context.lineTo(200, 10);
+        // context.lineTo(200, 200);
+        // context.lineTo(10, 200);
+        // context.lineTo(10, 10);
+
+        // context.stroke();
+
+        // 设置颜色
+        // context.fillStyle='red';
+        // fill   填充正方形
+        // context.fill();
+
+
+        // 绘制第1条线段、
+        // context.beginPath();
+        context.strokeStyle='red';
+        context.moveTo(50,50);
+        context.lineTo(250,50);
+        // 绘制第2条线段、
+        context.strokeStyle='blue';
+        context.moveTo(10,90);
+        context.lineTo(200,10);
+        
+        // 绘制第3条线段、
+        context.strokeStyle='yellow';
+        context.moveTo(70,100)
+        context.lineTo(200,10)
+
+        // 第四条线
+        context.moveTo(50,50);
+        context.lineTo(70,100);
+        // 第五条线
+        context.moveTo(10,90);
+        context.lineTo(250,50);
+
+        context.stroke();
+
+
+    //    闭合路径(图形)
+    context.closePath();
+
+
+
+
+
+    </script>
+</body>
+
+</html>

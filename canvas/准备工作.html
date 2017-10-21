@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 在HTML中添加一个canvas标签 那么就代表在页面中开辟了一块绘画区域 画布
+    画布默认大小是300*150
+    如何设置canvas画布大小 可以再canvas标签中设置其属性的大小 通过js去设置 canvas的width 和height属性
+
+    兼容不错 不支持IE678
+
+    绘画坐标的直角关系 坐标(0,0)点事从左边角开始的 x轴的水平方向为右边
+    Y轴的水平方向为下 在canvas中 每一个点的坐标都是直接对应到一个css像素上 -->
+
+    <!-- canvas 绘画图形的基本步骤大概有
+    在HTML中添加画布元素
+    通过js获取画布元素
+    获取画笔 -->
+
+    <canvas></canvas>
+    <script>
+    // 获取画布元素
+        var canvas = document.querySelector('canvas');
+        // 设置画布大小 宽高
+        canvas.width = 600;
+        canvas.height = 300;
+        canvas.style.border = '1px solid blue'; 
+        // 获取2d画笔上下文
+        var context = canvas.getContext('2d');
+        // 笔画起点
+        // context.moveTo(10,10);
+        // 笔画终点
+        // context.lineTo(100,100);
+        // 把线连起来
+        // context.stroke();
+    </script>
+</body>
+</html>
